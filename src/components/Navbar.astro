@@ -1,0 +1,46 @@
+---
+// Navbar.astro
+---
+
+<header class="flex flex-col w-full relative z-50">
+  <!-- Apple-style Global Nav (Dark, thin, top level) -->
+  <nav class="global-nav w-full px-4 md:px-8 flex justify-between items-center hidden md:flex">
+    <div class="flex gap-6 text-[#a1a1a6]">
+      <span class="hover:text-white transition-colors cursor-pointer">5 Cabang Jabodetabek & Surabaya</span>
+      <span class="hover:text-white transition-colors cursor-pointer">BPJS & Asuransi Partner</span>
+    </div>
+    <div class="flex gap-6 text-[#a1a1a6]">
+      <a href="#" class="hover:text-white transition-colors">Call Center: 1500-VISI</a>
+    </div>
+  </nav>
+
+  <!-- Apple-style Sub Nav (Frosted glass, sticky) -->
+  <nav class="sub-nav-frosted w-full px-4 md:px-8 flex justify-between items-center transition-all duration-300">
+    <!-- Logo -->
+    <a href="/" class="flex items-center gap-2 text-text-primary font-semibold text-lg tracking-tight">
+      <svg class="w-6 h-6 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+      Visi Klinik Mata
+    </a>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center gap-8 text-[14px] font-medium text-text-primary">
+      <a href="#layanan" class="hover:text-brand-blue transition-colors">Layanan</a>
+      <a href="#lasik" class="hover:text-brand-blue transition-colors">Lasik</a>
+      <a href="#dokter" class="hover:text-brand-blue transition-colors">Dokter</a>
+      <a href="#kacamata" class="hover:text-brand-blue transition-colors">Kacamata</a>
+      <a href="#lokasi" class="hover:text-brand-blue transition-colors">Lokasi</a>
+    </div>
+
+    <!-- CTA -->
+    <div class="flex items-center gap-4">
+      <a href="#booking" class="button-primary text-[12px] md:text-[14px] px-3 py-1 md:px-4 md:py-1.5">
+        Book Pemeriksaan
+      </a>
+      
+      <!-- Mobile Menu Toggle (Icon) -->
+      <button class="md:hidden text-text-primary">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+  </nav>
+</header>

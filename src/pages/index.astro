@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero';
+import EyeConditions from '../components/EyeConditions';
+import Services from '../components/Services';
+import Lasik from '../components/Lasik';
+import Doctors from '../components/Doctors';
+import Technology from '../components/Technology';
+import OpticalShop from '../components/OpticalShop';
+import WhenToSee from '../components/WhenToSee';
+import Testimonial from '../components/Testimonial';
+import FAQ from '../components/FAQ';
+import Booking from '../components/Booking';
+import Footer from '../components/Footer';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+  <Navbar />
+  <main>
+    <Hero client:load />
+    <EyeConditions client:visible />
+    <Services client:visible />
+    <Lasik client:visible />
+    <Doctors client:visible />
+    <Technology client:visible />
+    <OpticalShop client:visible />
+    <WhenToSee client:visible />
+    <Testimonial client:visible />
+    <FAQ client:visible />
+    <Booking client:idle />
+  </main>
+  <Footer client:idle />
+</Layout>

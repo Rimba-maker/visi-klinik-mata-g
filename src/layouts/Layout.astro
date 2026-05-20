@@ -1,0 +1,49 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = "Visi Klinik Mata — Klinik Mata Spesialis Jakarta, Lasik & Katarak",
+  description = "Klinik mata spesialis dengan 15+ dokter Sp.M. Lasik Wavelight FS200, operasi katarak, treatment retina, mata anak, glaucoma. 5 cabang Jabodetabek + Surabaya."
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO Meta Tags -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content="klinik mata jakarta, lasik jakarta, operasi katarak, dokter mata, dokter Sp.M, glaucoma jakarta, kacamata anak, klinik mata BPJS" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og-image.jpg" />
+    
+    <!-- Schema.org for Medical Clinic -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "Visi Klinik Mata",
+        "medicalSpecialty": "Ophthalmology",
+        "description": "Klinik mata spesialis komprehensif di Jakarta melayani Lasik, katarak, dan pemeriksaan mata rutin.",
+        "url": "https://visiklinikmata.com"
+      }
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
