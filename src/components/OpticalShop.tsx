@@ -97,8 +97,8 @@ export default function OpticalShop() {
               className="relative rounded-[24px] overflow-hidden shadow-2xl shadow-black/10 aspect-[4/3] md:aspect-square lg:aspect-[4/3]"
             >
               <img 
-                src="https://images.pexels.com/photos/3956133/pexels-photo-3956133.jpeg?auto=compress&cs=tinysrgb&w=1200" 
-                alt="Optical shop interior" 
+                src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?q=80&w=1200&auto=format&fit=crop" 
+                alt="High precision eye lens work" 
                 className="w-full h-full object-cover"
               />
               {/* Glassmorphism Badge overlay */}

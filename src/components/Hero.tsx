@@ -23,10 +23,10 @@ export default function Hero() {
         <img 
           src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1920&auto=format&fit=crop" 
           alt="Pemeriksaan mata dokter" 
-          className="w-full h-full object-cover opacity-[0.15]"
+          className="w-full h-full object-cover opacity-[0.4]"
         />
         {/* Gradient Overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-surface-gray/50 via-surface-gray/80 to-surface-gray"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-surface-gray/40 via-surface-gray/70 to-surface-gray"></div>
       </div>
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
