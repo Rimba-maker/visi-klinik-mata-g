@@ -6,6 +6,8 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://Rimba-maker.github.io',
+  base: '/visi-klinik-mata-g',
   vite: {
     plugins: [tailwindcss()]
   },
